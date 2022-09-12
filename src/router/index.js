@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 import Tables from "../views/Tables.vue";
-import Billing from "../views/Billing.vue";
-import VirtualReality from "../views/VirtualReality.vue";
-import RTL from "../views/Rtl.vue";
+import AddUser from "../views/Billing.vue";
+import UpdateUser from "../views/updateUser.vue";
+// import RTL from "../views/Rtl.vue";
 import Profile from "../views/Profile.vue";
 import Signup from "../views/Signup.vue";
 import Signin from "../views/Signin.vue";
@@ -21,24 +21,24 @@ const routes = [
   },
   {
     path: "/tables",
-    name: "Tables",
+    name: "List User",
     component: Tables,
   },
   {
-    path: "/billing",
-    name: "Billing",
-    component: Billing,
+    path: "/add-user",
+    name: "Add User",
+    component: AddUser,
   },
   {
-    path: "/virtual-reality",
-    name: "Virtual Reality",
-    component: VirtualReality,
+    path: "/update-user",
+    name: "Update Data",
+    component: UpdateUser,
   },
-  {
-    path: "/rtl-page",
-    name: "RTL",
-    component: RTL,
-  },
+  // {
+  //   path: "/rtl-page",
+  //   name: "RTL",
+  //   component: RTL,
+  // },
   {
     path: "/profile",
     name: "Profile",
